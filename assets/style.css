@@ -1,0 +1,227 @@
+/* styling for double navbar */
+html,body,header {
+    height: 150vh;
+    font-family: 'Open Sans',sans-serif;
+    scroll-behavior: smooth;
+    color: black;
+}
+.view {
+    height: 100%;
+    background-color: black no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.view h1 {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+.fixed-top {
+    padding: 20px 0 0px 8px;
+    background-color: #1db1a8;
+}
+.fixed-top .navbar-nav li a {
+    font-size: 19px;
+    color: #1db1a8 !important;
+    justify-content: center;
+}
+.fixed-top .navbar-nav li a:hover {
+    color: #E5F5F4 !important;
+}
+.btn {
+    appearance: none;
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: #147b74;
+    font-weight: 700;
+    transition: background-color .2s;
+    height: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 18px;
+    min-height: 36px;
+    margin: 0 5px 0 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Open Sans',sans-serif;
+}
+.button-container {
+    list-style: none;
+    clear: both;
+    float: right;
+    width: auto;
+    height: auto;
+    margin-top: 23px;
+    display: flex;
+}
+.btn:visited {
+    text-decoration: none;
+}
+.btn.store-locator::before {
+    background-position: -10px -7px;
+    width: 14px;
+    height: 22px;
+    background-size: auto 33px;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    background-position: 0 0;
+    background-size: auto 27px;
+    z-index: 1;
+}
+.btn.bewell-button::before {
+    background-position: 8px 5px;
+    width: 35px;
+    background-size: auto 27px;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    transform: translateY(-50%);
+    background-position: 0 0;
+}
+.btn.subscribe::before, .btn.subscribe::before {
+    background-position: -6px -6px;
+    width: 22px;
+    height: 22px;
+    background-size: auto 33px;
+    background-size: auto 27px;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+
+}
+.btn.flyer::before {
+    background-position: -6px -7px;
+    width: 22px;
+    height: 22px;
+    background-size: auto 33px;
+    background-size: auto 27px;
+    z-index: 1;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+}
+.btnheader-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: #147b74;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color .2s;
+    height: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 18px;
+    min-height: 36px;
+    margin-left: 5px;
+    vertical-align: top;
+    font-family: 'Open Sans',sans-serif;
+}
+.container {
+    display: inline-block;
+}
+.container input{
+    border: 1px solid #6e6e6e;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 13px;
+    height: 36px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(../images/vendor-store-locator/inspired-beauty/search.svg);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 30px;
+    background-size: 20px;
+    width: 310px;
+}
+.page-header .right {
+    list-style: none;
+    clear: both;
+    float: right;
+    width: auto;
+    height: auto;
+    margin-top: 23px;
+    display: flex;
+}
+.page-header .right {
+    display: block;
+    float: right;
+    height: auto;
+    text-align: right;
+}
+.screenreader-only {
+    border: 0 !important;
+    clip: rect(0, 0, 0, 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    top: auto !important;
+}
+form {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@media screen and (max-width:767px){
+    .navbar-dark{
+    background-color: #1db1a8 !important;
+    }
+    
+}
+
+#main-bar {
+    position: absolute;
+    width: 100%;
+    top: 13%;
+    position: fixed;
+    z-index: 1;
+    background-color: #1db1a8;
+}
+#main-bar .nav-item{
+    margin-left: 10px;
+    font-size: 17px;
+}
