@@ -23,7 +23,6 @@ html,body,header {
 .fixed-top .navbar-nav li a {
     font-size: 19px;
     color: #1db1a8 !important;
-    justify-content: center;
 }
 .fixed-top .navbar-nav li a:hover {
     color: #E5F5F4 !important;
@@ -176,21 +175,7 @@ html,body,header {
     background-size: 20px;
     width: 310px;
 }
-.page-header .right {
-    list-style: none;
-    clear: both;
-    float: right;
-    width: auto;
-    height: auto;
-    margin-top: 23px;
-    display: flex;
-}
-.page-header .right {
-    display: block;
-    float: right;
-    height: auto;
-    text-align: right;
-}
+
 .screenreader-only {
     border: 0 !important;
     clip: rect(0, 0, 0, 0) !important;
