@@ -5,17 +5,7 @@ html,body,header {
     scroll-behavior: smooth;
     color: black;
 }
-.view {
-    height: 100%;
-    background-color: black no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.view h1 {
-    position: absolute;
-    top: 55%;
-    left: 30%;
-}
+
 .fixed-top {
     padding: 20px 0 0px 8px;
     background-color: #1db1a8;
