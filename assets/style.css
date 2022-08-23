@@ -161,14 +161,16 @@ background-color: #147B74;
     height: 36px;
     width: 100%;
     box-sizing: border-box;
-    background-image: url(../images/vendor-store-locator/inspired-beauty/search.svg);
+    background-image: url(./images/istockphoto-1317416781-612x612\ 1.png);
     background-repeat: no-repeat;
     background-position: 5px center;
     padding-left: 30px;
     background-size: 20px;
     width: 310px;
 }
-
+.image-back { 
+    background-image: url(./images/istockphoto-1317416781-612x612\ 1.png)
+}
 .screenreader-only {
     border: 0 !important;
     clip: rect(0, 0, 0, 0) !important;
