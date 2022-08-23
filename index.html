@@ -128,20 +128,7 @@
         
         <hr class="d-sm-none">
       </div>
-      <div class="col-sm-8">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg">Fake Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg">Fake Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        
-        <div class="container mt-3">
+      <div class="col-sm-8"><div class="container mt-3">
             <h6>Medication Name / DIN</h6>  
             <input class="form-control" id="myInput" type="text" placeholder="">
             <br>
@@ -150,6 +137,8 @@
               <a href="#" class="list-group-item list-group-item-action">Reactine Regular Strength</a>
               <a href="#" class="list-group-item list-group-item-action">Reactine</a>
             </ul>  
+             <label for="Quantity" class="mb-2 mr-sm-2">Quantity</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="" name="">
           </div>
           <!-- Caontent JS for filter list -->
           <script>
@@ -163,16 +152,21 @@
           });
           </script>
 
-          <div class="container">
-            <h6>Distance</h6>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">5km</button>
-              <button type="button" class="btn btn-primary">10km</button>
-              <button type="button" class="btn btn-primary">20km</button>
-              <button type="button" class="btn btn-primary">30km</button>
-            </div>
-          </div> 
-
+<div class="container">
+  <form class="form-inline" action="/action_page.php">
+    <label for="vin" class="mb-2 mr-sm-2">Postal Code / VIN</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="vin" placeholder="" name="">
+    <div class="container">
+      <h6>Distance</h6>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">5km</button>
+        <button type="button" class="btn btn-primary">10km</button>
+        <button type="button" class="btn btn-primary">20km</button>
+        <button type="button" class="btn btn-primary">30km</button>
+      </div>
+    </div> 
+  </form>
+</div>
           <div class="container">
             <form action="/action_page.php">
               <div class="form-check-inline">
@@ -185,7 +179,7 @@
               </div>
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn-primary"><img src="./assets/images/Vector.png">Search</button>
             </form>
           </div>
 
@@ -195,31 +189,7 @@
   
   <div class="jumbotron text-center" style="margin-bottom:0">
     <p>Footer</p>
-  </div>
-
-  <!-- content of website -->
-
-  <div class="conatier-fluid p-0">
-    <img src=" " style="height:900px;width:" />
-    </div>
-
-    <!-- jquery for color change navbar on scroll -->
-    <script>
-
-        $(document).ready(function(){
-            $(window).scroll(function(){
-               var scroll = $(window).scrollTop();
-               if(scroll > 280){
-                $(".navbar-dark").css("background", "#1db1a8");
-               } 
-               else{
-                $(".navbar-dark").css("background" , "transparent");
-               }
-            });
-        });
-    </script>
-
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </div><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
      <script src="js/index.js"></script>
 </body>
 </html>

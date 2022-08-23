@@ -1,6 +1,6 @@
 /* styling for double navbar */
 html,body,header {
-    height: 150vh;
+    height: 20vh;
     font-family: 'Open Sans',sans-serif;
     scroll-behavior: smooth;
     color: black;
@@ -16,6 +16,9 @@ html,body,header {
 }
 .fixed-top .navbar-nav li a:hover {
     color: #E5F5F4 !important;
+}
+.btn-primary {
+background-color: #147B74;
 }
 .btn {
     appearance: none;
