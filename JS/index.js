@@ -1,12 +1,20 @@
+<!-- jquery for color change navbar on scroll -->
+    <script>
 
+        $(document).ready(function(){
+            $(window).scroll(function(){
+               var scroll = $(window).scrollTop();
+               if(scroll > 280){
+                $(".navbar-dark").css("background", "#1db1a8");
+               } 
+               else{
+                $(".navbar-dark").css("background" , "transparent");
+               }
+            });
+        });
+    </script>
 
-.view {
-    height: 100%;
-    background-color: black no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+@media min width (whatever mobile size is) --- anything below 600 is display: none; 
+display:; block;
 
-    .view h1 {
-        position: absolute;
-        top: 55%;
-        left: 30%;
+max width 600, display none

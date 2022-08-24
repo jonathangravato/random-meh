@@ -12,13 +12,51 @@ html,body,header {
 }
 .fixed-top .navbar-nav li a {
     font-size: 19px;
-    color: #1db1a8 !important;
+    color: #121818 !important;
 }
 .fixed-top .navbar-nav li a:hover {
     color: #E5F5F4 !important;
 }
 .btn-primary {
 background-color: #147B74;
+}
+.left { 
+    display: block;
+    padding: 0 15px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    list-style: none none;
+    margin: 0;
+    clear: both;
+}
+nav {
+    display: block;
+}
+.page-header .nav {
+    display: block;
+    padding: 0 15px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-header .content::after {
+    content: '';
+    display: table;
+}
+.page-header .nav:before, .page-header .nav:after {
+    content: '';
+    display: table;
+}
+.page-header .nav:after {
+    clear: both;
+}
+.nav:before, .page-header .nav:after {
+    content: '';
+    display: table;
 }
 .btn {
     appearance: none;
@@ -193,15 +231,3 @@ form {
     
 }
 
-#main-bar {
-    position: absolute;
-    width: 100%;
-    top: 13%;
-    position: fixed;
-    z-index: 1;
-    background-color: #1db1a8;
-}
-#main-bar .nav-item{
-    margin-left: 10px;
-    font-size: 17px;
-}
